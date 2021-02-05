@@ -1,0 +1,139 @@
+$max-width: 60rem;
+
+$color1: #4F9E4C;
+
+%flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+%flex-col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+%just-cont-center
+{
+    justify-content: center;
+}
+
+%align-items-cent
+{
+    align-items: center;
+}
+
+%mx-width
+{
+    max-width: 60rem;
+}
+
+body
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0rem;
+}
+
+header
+{
+    @extend %flex-col, %align-items-cent;
+    font-size: 1.2rem;
+    width: 100vw;
+    margin: 0rem;
+    padding: 0rem;
+    color: #fff;
+    div
+    {
+        @extend %mx-width;
+        width: 100%;
+        justify-content: flex-start;
+        h1
+        {
+            font-size: 3.8rem;
+            padding-bottom: 0rem;
+            margin-bottom: -1rem;
+        }
+    }
+    nav
+    {
+        @extend %flex-row, %just-cont-center;
+        width: 100vw;
+        background-color: $color1;
+        ul
+        {
+            @extend %flex-row, %mx-width;
+            width: 100%;
+            li
+            {
+                padding: .6rem;
+                width: 25%;
+                text-align: center;
+            }
+            li:hover
+            {
+                background-color: darken( $color1, 10%);
+            }
+        }
+    }
+}
+
+.landing-page
+{
+    @extend %flex-col, %align-items-cent;
+    width: 100vw;
+    padding: 0rem .5rem 0rem .5rem;
+}
+
+section
+{
+    @extend %flex-col, %mx-width;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h2
+    {
+        margin-top: 2rem;
+    }
+    h3
+    {
+        margin: 1.5rem 0rem .5rem 0rem;
+    }
+    p
+    {
+        line-height: 1.8rem;
+    }
+}
+
+footer
+{
+    @extend %flex-row, %just-cont-center;   
+    width: 100vw;
+    background-color: $color1;
+    height: 50px;
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 2.5rem;
+    color: #fff;
+}
+
+.active
+{
+    background-color: darken($color1, 10%);
+}
+
+.bg-pic
+{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    min-height: 20vh;
+}
+
+header
+{
+    width: 100%;
+}
+
