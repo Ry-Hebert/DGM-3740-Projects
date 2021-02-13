@@ -1,0 +1,62 @@
+.med-lg
+{
+    display: block;
+}
+
+.ham-menu
+{
+    display: none;
+}
+
+.head-cont
+{
+    flex-direction: row;
+    #menu-search
+    {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 40%;
+        padding: 1rem 0rem;
+    }
+}
+
+.pCard
+{
+    grid-column: span 3;
+    height: 45vw;
+}
+
+.mainPointsNav
+{
+    grid-column: span 4;
+}
+
+.blogPost
+{
+    grid-column: span 6;
+    background-color: transparent;
+    .bpInner
+    {
+        background-color: #806441;
+        h3, p
+        {
+            padding: 0rem 1rem;
+        }
+    }
+    h5
+    {
+        text-align: center;
+    }
+}
+
+.tipOTD
+{
+    grid-column: span 6;
+    padding: 0rem 1rem;
+}
+
+.faqCard
+{
+    grid-column: span 2;
+    padding: 0rem 1rem;
+}
