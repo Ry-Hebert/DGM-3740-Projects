@@ -91,7 +91,7 @@ header nav, header nav ul, .logo-head, .head-cont, #menu-search {
           flex-direction: row;
 }
 
-header, header div, .landing-page, section, footer, .body-text, .ham-menu, .ham-menu2, .ham-menu #hamBars, .ham-menu2 #hamBars, .smNav .smNav, .smNav ul {
+header, header div, .landing-page, section, footer, .body-text, .ham-menu, .ham-menu2, .smNav .smNav, .smNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,25 +292,8 @@ p img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem .5rem;
   border-radius: .25rem;
-}
-
-.ham-menu #hamBars, .ham-menu2 #hamBars {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.ham-menu #hamBars .hamBar, .ham-menu2 #hamBars .hamBar {
-  width: 75%;
-  height: 10%;
-  background-color: #fff;
-  border-radius: 5rem;
+  font-size: 1rem;
 }
 
 .ham-menu:active, .ham-menu2:active {
@@ -496,6 +479,12 @@ p img {
 
 .icons i {
   font-size: 4rem;
+}
+
+.logo-class {
+  width: 6rem;
+  content: -webkit-image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
+  content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
 }
 
 @media only screen and (min-width: 34rem) {

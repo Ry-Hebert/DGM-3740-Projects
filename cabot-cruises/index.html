@@ -7,175 +7,88 @@
     <meta name="description" content="Fill Me In">
     <meta name="author" content="John Doe">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <title>Unit 07</title>
-    <link rel="stylesheet" href="/assets/scss/styles.css">
+    <title>Cabot Cruises</title>
+    <link rel="stylesheet" href="./assets/scss/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
 </head>
 <body>
     <header>
-        <div id="top-ban"></div>
         <div class="logo-head">
             <div class="head-cont">
                 <div id="name-slogan">
-                    <h1>Hansel, Gretel, and Streusel</h1>
-                    <h2>Legal council for all your culinary litigation issues.</h2>
+                    <img class="logo-class" alt="Cabot Cruises Logo">
                 </div>
                 <div id="menu-search">
                     <div class="ham-menu" id="m1" onclick="menuToggle(0)">
-                        <div id="hamBars">
-                        <div class='hamBar'></div>
-                        <div class='hamBar'></div>
-                        <div class='hamBar'></div>
-                        </div>
+                        <i class="fas fa-bars"></i>
                     </div>
                     <div class="ham-menu menuToggle" id="m2" onclick="menuToggle(1)">
-                            <div id="hamBars">
-                            <div class='hamBar'></div>
-                            </div>
+                        <i class="fas fa-bars"></i>
                     </div>
                     <input id="searchField" type="search" placeholder="Search...">
                 </div>
                 <div class="openMenu menuToggle">
                     <nav class='smNav'>
                         <ul class="smNav nav-menu">
-                            <li>Home</li>
-                            <li class="active">Attorneys</li>
-                            <li>Practices</li>
-                            <li>About Us</li>
-                            <li>News</li>
-                            <li>Links</li>
+                            <li class="active">Home</li>
+                            <li>Cruises</li>
+                            <li>Agents</li>
+                            <li>Book</li>
                         </ul>
                     </nav>
+                </div>
+                <div class="med-lg">
+                    <div>1-800-555-1234</div>
                 </div>
             </div>
         </div>
         <nav class='med-lg'>
             <ul class="nav-menu">
-                <li>Home</li>
-                <li class="active">Attorneys</li>
-                <li>Practices</li>
-                <li>About Us</li>
-                <li>News</li>
-                <li>Links</li>
+                <li class="active">Home</li>
+                <li>Cruises</li>
+                <li>Agents</li>
+                <li>Book</li>
             </ul>
         </nav>
+        <div class="med-lg">
+            <div>1-800-555-1234</div>
+        </div>
     </header>
     <div class="landing-page">
         <main>
-            <section class="gridSec1">
-                <div class="pCard" id="p1">
-                    <h3>Perry Mason</h3>
-                    <div class="pCImg" id="pci1"></div>
-                    <div class="lmButton">
-                        <h4>Learn More</h4>
-                    </div>
-                </div>
-                <div class="pCard" id="p2">
-                    <h3>Malcom Turnbull</h3>
-                    <div class="pCImg" id="pci2"></div>
-                    <div class="lmButton">
-                        <h4>Learn More</h4>
-                    </div>
-                </div>
-                <div class="pCard" id="p3">
-                    <h3>Alan Shore</h3>
-                    <div class="pCImg" id="pci3"></div>
-                    <div class="lmButton">
-                        <h4>Learn More</h4>
-                    </div>
-                </div>
-                <div class="pCard" id="p4">
-                    <h3>Alicia Florrick</h3>
-                    <div class="pCImg" id="pci4"></div>
-                    <div class="lmButton">
-                        <h4>Learn More</h4>
-                    </div>
-                </div>
-                <div class="mainPointsNav" id="ca1">
-                    <h2>Clients</h2>
-                </div>
-                <div class="mainPointsNav" id="ca2">
-                    <h2>Your Case Review</h2>
-                </div>
-                <div class="mainPointsNav" id="ca3">
-                    <h2>Famous Cases</h2>
-                </div>
-                <div class="blogPost">
-                    <div class="bpInner">
-                        <div class="bpImg" id="bpImg1"><img class="lazy" alt="Performance 1" loading="lazy" data-src="/assets/img/performance1.jpg"></div>
-                        <h3>Blog Post #1</h3>
-                        <p>
-                                Aenean placerat nisi, elementum dolor a pulvinar odio, turpis urna, est est tincidunt et dis, tristique diam odio! Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                        </p>
-                    </div>
-                    <h5>Read More</h5>
-                </div>
-                <div class="blogPost">
-                    <div class="bpInner">
-                        <div class="bpImg" id="bpImg2"><img class="lazy" alt="Performance 2" loading="lazy" data-src="/assets/img/performance2.jpg"></div>
-                        <h3>Blog Post #2</h3>
-                        <p>
-                                Aenean placerat nisi, elementum dolor a pulvinar odio, turpis urna, est est tincidunt et dis, tristique diam odio! Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                        </p>
-                    </div>
-                    <h5>Read More</h5>
-                </div>
-                <div class="blogPost">
-                    <div class="bpInner">
-                        <div class="bpImg" id="bpImg3"><img class="lazy" alt="Performance 3" loading="lazy" data-src="/assets/img/performance3.jpg"></div>
-                        <h3>Blog Post #3</h3>
-                        <p>
-                                Aenean placerat nisi, elementum dolor a pulvinar odio, turpis urna, est est tincidunt et dis, tristique diam odio! Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                        </p>
-                    </div>
-                    <h5>Read More</h5>
-                </div>
-                <div class="blogPost">
-                    <div class="bpInner">
-                        <div class="bpImg" id="bpImg4"><img class="lazy" alt="Performance 4" loading="lazy" data-src="/assets/img/performance4.jpg"></div>
-                        <h3>Blog Post #4</h3>
-                        <p>
-                                Aenean placerat nisi, elementum dolor a pulvinar odio, turpis urna, est est tincidunt et dis, tristique diam odio! Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                        </p>
-                    </div>
-                    <h5>Read More</h5>
-                </div>
-                <div class="tipOTD">
-                    <h3>Tip of the Day</h3>
-                    <p>
-                        Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integerMagna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integerMagna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integerMagna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integerMagna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                    </p>
-                    <h5>Read More</h5>
-                </div>
-                <div class="faqCard">
-                    <h3>FAQ #1</h3>
-                    <p>
-                        Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                    </p>
-                    <h5>Read More</h5>
-                </div>
-                <div class="faqCard">
-                    <h3>FAQ #2</h3>
-                    <p>
-                        Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                    </p>
-                    <h5>Read More</h5>
-                </div>
-                <div class="faqCard">
-                    <h3>FAQ #3</h3>
-                    <p>
-                        Magna porttitor, nisi mus pid nec diam mid! Phasellus habitasse! Vel montes ac dignissim phasellus, cum ultrices integer
-                    </p>
-                    <h5>Read More</h5>
-                </div>
+            <section class="img-slider-cc">
+
+            </section>
+            <section class="blog-post-cc">
+                <h1>Recent Blog Articles</h1>
             </section>
         </main>
     </div>
     <footer>
-        <div class="icons">
-            <i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-reddit"></i><i class="fab fa-app-store"></i>
+        <div>
+            <div class="footer-contact-cc">
+                <h3>Contact Us</h3>
+                <p>CABOT CRUIZES <br>23 South Main St. Suite 16 <br> Lexington, VA 24450</p>
+                <h3>Phone:</h3>
+                <p>1-800-555-1234</p>
+                <h3>Hours of Operation:</h3>
+                <p>Monday - Friday 9am - 4pm</p>
+            </div>
+            <div class="footer-news-cc">
+                <h3>News Letter</h3>
+                <p>Subscribe to our email list and stay upto-date with our hottest offers and latest specials.</p>
+                <input>
+                <button></button>
+            </div>
+            <div class="footer-why-cc">
+                <h3>Why Cabot Cruises</h3>
+                <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacations including discounted cruises. <br><br>We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii and Washington state because those states are just weird. If you are a resident of one of these states, call your congressman and tell them to change the regulations.</p>
+            </div>
         </div>
-        <h4>&copy; &bull; Ryan Hébert &bull; Login</h4>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i><i class="fab fa-youtube"></i><i class="fab fa-instagram"></i><i class="fab fa-pinterest"></i><i class="fab fa-twitter"></i>
+        </div>
+        <h4>&copy; &bull; Ryan Hébert &bull; ryanhébert.com</h4>
     </footer>
     <script src="https://kit.fontawesome.com/20fde073db.js" crossorigin="anonymous"></script>
     <script>let lazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});</script>

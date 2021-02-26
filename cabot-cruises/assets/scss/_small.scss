@@ -231,23 +231,8 @@ p
     width: 8vh;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem .5rem;
     border-radius: .25rem;
-    #hamBars
-    {
-        @extend %flex-col;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        .hamBar
-        {
-            width: 75%;
-            height: 10%;
-            background-color: #fff;
-            border-radius: 5rem;
-        }
-    }
+    font-size: 1rem;
 }
 
 .ham-menu:active, .ham-menu2:active 
@@ -447,4 +432,10 @@ p
     {
         font-size: 4rem;
     }
+}
+
+.logo-class{
+    // font-size: 2rem;
+    width: 6rem;
+    content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
 }
