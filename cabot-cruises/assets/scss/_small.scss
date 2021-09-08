@@ -158,8 +158,28 @@ footer
     }
 }
 
-.footer-news-cc button{
+.footer-news-cc {
+
+    margin: 1rem 0rem;
+
+    *{
+        margin: .5rem 0rem;
+    }
+    input{
+        width: 100%;
+    }
+    button{
     border-radius: 5rem;
+    width: 100%;
+    }
+}
+
+.footer-why-cc{
+    margin: 1rem 0rem;
+
+    h3{
+        text-align: center;
+    }
 }
 
 .active
@@ -442,7 +462,7 @@ p
     width: 100%;
     i
     {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
 

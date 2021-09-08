@@ -225,8 +225,29 @@ footer h4 {
   margin: .5rem 0rem;
 }
 
+.footer-news-cc {
+  margin: 1rem 0rem;
+}
+
+.footer-news-cc * {
+  margin: .5rem 0rem;
+}
+
+.footer-news-cc input {
+  width: 100%;
+}
+
 .footer-news-cc button {
   border-radius: 5rem;
+  width: 100%;
+}
+
+.footer-why-cc {
+  margin: 1rem 0rem;
+}
+
+.footer-why-cc h3 {
+  text-align: center;
 }
 
 .active {
@@ -498,7 +519,7 @@ p img {
 }
 
 .icons i {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .logo-class {
