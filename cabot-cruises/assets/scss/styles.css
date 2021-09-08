@@ -81,7 +81,7 @@ select {
   }
 }
 
-header nav, header nav ul, .logo-head, .head-cont, #menu-search {
+header nav, header nav ul, .logo-head, #menu-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +113,7 @@ header, .landing-page, .smNav .smNav, .smNav ul {
           align-items: center;
 }
 
-header nav, header nav ul, section, footer div, .head-cont, .smNav .smNav, .smNav ul {
+header nav, header nav ul, section, footer div, .smNav .smNav, .smNav ul {
   max-width: 75rem;
 }
 
@@ -140,7 +140,7 @@ header div {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #806441;
+  background-color: #90cdff;
 }
 
 header div div {
@@ -161,7 +161,7 @@ header div div h2 {
 
 header nav {
   width: 100%;
-  background-color: #ae8b5f;
+  background-color: #ddefff;
 }
 
 header nav ul {
@@ -175,7 +175,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-  background-color: #5e4a30;
+  background-color: #5db6ff;
 }
 
 #searchField {
@@ -218,15 +218,19 @@ footer {
   width: 100%;
   background-color: #222;
   font-size: 1rem;
-  margin: 2.5rem 0rem 0rem 0rem;
+  padding: 2.5rem 1rem 0rem 1rem;
 }
 
 footer h4 {
   margin: .5rem 0rem;
 }
 
+.footer-news-cc button {
+  border-radius: 5rem;
+}
+
 .active {
-  background-color: #5e4a30;
+  background-color: #5db6ff;
 }
 
 header {
@@ -258,6 +262,11 @@ p img {
 }
 
 .head-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu" "logo";
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -278,10 +287,17 @@ p img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
 }
 
 #name-slogan {
-  padding: 0rem .8rem 1rem;
+  padding: 0rem .5rem .5rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  background-color: #fff;
 }
 
 .ham-menu, .ham-menu2 {
@@ -297,11 +313,11 @@ p img {
 }
 
 .ham-menu:active, .ham-menu2:active {
-  background-color: #a27e52;
+  background-color: #c3e4ff;
 }
 
 .ham-menu:active > #hamBars, .ham-menu2:active > #hamBars {
-  background-color: #a27e52;
+  background-color: #c3e4ff;
 }
 
 .med-lg {
@@ -314,6 +330,10 @@ p img {
 
 .openMenu {
   width: 100%;
+}
+
+.openMenu nav {
+  background-color: #90cdff;
 }
 
 .smNav .smNav li, .smNav ul li {
@@ -412,7 +432,7 @@ p img {
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
   place-self: center;
-  background-color: #806441;
+  background-color: #90cdff;
   width: 100%;
 }
 
@@ -456,7 +476,7 @@ p img {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
-  background-color: #806441;
+  background-color: #90cdff;
   padding: 0rem .25rem;
 }
 
@@ -485,6 +505,10 @@ p img {
   width: 6rem;
   content: -webkit-image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
   content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
+}
+
+.img-slider-cc {
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 34rem) {

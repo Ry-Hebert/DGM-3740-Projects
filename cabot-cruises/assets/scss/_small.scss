@@ -2,7 +2,7 @@ $max-width: 75rem;
 
 $color1: #222;
 
-$color2: #806441;
+$color2: #90cdff;
 
 $color3: #265299;
 
@@ -147,7 +147,7 @@ footer
     width: 100%;
     background-color: $color1;
     font-size: 1rem;
-    margin: 2.5rem 0rem 0rem 0rem;
+    padding: 2.5rem 1rem 0rem 1rem;
     h4
     {
         margin: .5rem 0rem;
@@ -156,6 +156,10 @@ footer
     {
         @extend %mx-width;
     }
+}
+
+.footer-news-cc button{
+    border-radius: 5rem;
 }
 
 .active
@@ -199,7 +203,9 @@ p
 
 .head-cont
 {
-    @extend %flex-row, %mx-width;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "menu" "logo";
     width: 100%;
     justify-content: space-between;
 }
@@ -217,11 +223,14 @@ p
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    grid-area: menu;
 }
 
 #name-slogan
 {
-    padding: 0rem .8rem 1rem;
+    padding: 0rem .5rem .5rem;
+    grid-area: logo;
+    background-color: #fff
 }
 
 .ham-menu, .ham-menu2
@@ -258,6 +267,9 @@ p
 .openMenu
 {
     width: 100%;
+    nav{
+        background-color: $color2;
+    }
 }
 
 .smNav
@@ -439,3 +451,8 @@ p
     width: 6rem;
     content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
 }
+
+.img-slider-cc{
+    max-width: 100%;
+}
+
