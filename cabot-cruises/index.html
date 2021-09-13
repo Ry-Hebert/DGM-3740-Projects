@@ -8,6 +8,9 @@
     <meta name="author" content="John Doe">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Cabot Cruises</title>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/scss/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
 </head>
@@ -54,17 +57,40 @@
     <div class="landing-page">
         <main>
             <section class="img-slider-cc">
-                <div class="single-item">
-                    <div><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
-                    <div><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
-                    <div><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
-                    <div><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                <div class="slider">
+                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
+                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
+                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
+                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
                 </div>
             </section>
             <section class="blog-post-cc">
                 <h1>Recent Blog Articles</h1>
                 <div class="blog-post-sec">
-                    
+                    <div class="blog-item-container" id="blog-item1">
+                        <div class="blog-item-text"></div>
+                        <div class='blog-date-banner'>
+                            May 1, 2018
+                        </div>
+                    </div>
+                    <div class="blog-item-container" id="blog-item2">
+                        <div class="blog-item-text"></div>
+                        <div class='blog-date-banner'>
+                            May 1, 2018
+                        </div>
+                    </div>
+                    <div class="blog-item-container" id="blog-item3">
+                        <div class="blog-item-text"></div>
+                        <div class='blog-date-banner'>
+                            May 1, 2018
+                        </div>
+                    </div>
+                    <div class="blog-item-container" id="blog-item4">
+                        <div class="blog-item-text"></div>
+                        <div class='blog-date-banner'>
+                            May 1, 2018
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -98,5 +124,21 @@
     <script src="https://kit.fontawesome.com/20fde073db.js" crossorigin="anonymous"></script>
     <script>let lazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});</script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> -->
+    <script src="assets/js/slick.js">
+        $(document).ready(function () {
+            $(".slider").slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                cssEase: "ease-out",
+                speed: 2000,
+                autoplaySpeed: 10000,
+                mobileFirst: true,
+                touchMove: true
+            });
+        });
+    </script>
 </body>
 </html>
