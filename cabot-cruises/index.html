@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8" >
     <!--Do Not Lie-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Fill Me In">
     <meta name="author" content="John Doe">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Cabot Cruises</title>
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/scss/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
 </head>
@@ -57,11 +56,14 @@
     <div class="landing-page">
         <main>
             <section class="img-slider-cc">
-                <div class="slider">
-                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
-                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
-                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
-                    <picture><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></picture>
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section class="blog-post-cc">
@@ -125,20 +127,21 @@
     <script>let lazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});</script>
     <script src="./assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"> -->
-    <script src="assets/js/slick.js">
-        $(document).ready(function () {
-            $(".slider").slick({
-                autoplay: true,
-                dots: true,
-                arrows: false,
-                cssEase: "ease-out",
-                speed: 2000,
-                autoplaySpeed: 10000,
-                mobileFirst: true,
-                touchMove: true
-            });
-        });
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper1", {});
     </script>
+    <!-- <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+      
+        let swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script> -->
 </body>
 </html>
