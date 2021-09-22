@@ -530,11 +530,41 @@ p img {
 
 .img-slider-cc {
   width: 100vw;
+  height: 100vw;
+  padding: 0rem 0rem 1rem;
 }
 
 .swiper {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+#blog-item1 {
+  background-image: url("/assets/img/blog1.jpg");
+}
+
+#blog-item2 {
+  background-image: url("/assets/img/blog2.jpg");
+}
+
+#blog-item3 {
+  background-image: url("/assets/img/blog3.jpg");
+}
+
+#blog-item4 {
+  background-image: url("/assets/img/blog4.jpg");
+}
+
+.swiper-slide img {
+  max-width: none;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination {
+  margin-top: 1rem;
+  bottom: -10px;
 }
 
 @media only screen and (min-width: 34rem) {
