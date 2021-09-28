@@ -125,8 +125,9 @@ header {
 body {
   font-family: 'Oswald', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 0rem;
-  color: #ddd;
+  color: #eee;
   background-color: #222;
+  max-width: 100vw;
 }
 
 header {
@@ -140,7 +141,7 @@ header div {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #90cdff;
+  background-color: #3d99e6;
 }
 
 header div div {
@@ -161,7 +162,7 @@ header div div h2 {
 
 header nav {
   width: 100%;
-  background-color: #ddefff;
+  background-color: #81bdef;
 }
 
 header nav ul {
@@ -175,7 +176,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-  background-color: #5db6ff;
+  background-color: #1b80d5;
 }
 
 #searchField {
@@ -192,8 +193,6 @@ header nav ul li:hover {
 
 section {
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0rem .8rem;
@@ -217,7 +216,7 @@ footer {
           align-items: center;
   width: 100%;
   background-color: #222;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 2.5rem 1rem 0rem 1rem;
 }
 
@@ -251,7 +250,7 @@ footer h4 {
 }
 
 .active {
-  background-color: #5db6ff;
+  background-color: #1b80d5;
 }
 
 header {
@@ -296,7 +295,7 @@ p img {
 
 #top-ban {
   height: 1rem;
-  background-color: #265299;
+  background-color: #113570;
   width: 100%;
 }
 
@@ -334,11 +333,11 @@ p img {
 }
 
 .ham-menu:active, .ham-menu2:active {
-  background-color: #c3e4ff;
+  background-color: #6ab1ec;
 }
 
 .ham-menu:active > #hamBars, .ham-menu2:active > #hamBars {
-  background-color: #c3e4ff;
+  background-color: #6ab1ec;
 }
 
 .med-lg {
@@ -354,7 +353,7 @@ p img {
 }
 
 .openMenu nav {
-  background-color: #90cdff;
+  background-color: #3d99e6;
 }
 
 .smNav .smNav li, .smNav ul li {
@@ -415,7 +414,7 @@ p img {
 .lmButton {
   display: -ms-grid;
   display: grid;
-  background-color: #265299;
+  background-color: #113570;
   width: 75%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -425,7 +424,7 @@ p img {
 }
 
 .lmButton:hover {
-  background-color: #3068c2;
+  background-color: #184a9c;
 }
 
 .mainPointsNav {
@@ -437,7 +436,7 @@ p img {
   -ms-grid-column-span: 10;
   grid-column: 2 / span 10;
   height: 8vh;
-  background-color: #265299;
+  background-color: #113570;
   margin: .5rem;
   width: 90%;
 }
@@ -453,7 +452,7 @@ p img {
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
   place-self: center;
-  background-color: #90cdff;
+  background-color: #3d99e6;
   width: 100%;
 }
 
@@ -479,7 +478,7 @@ p img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
-  background-color: #265299;
+  background-color: #113570;
   padding: 0rem .25rem;
 }
 
@@ -497,7 +496,7 @@ p img {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / span 8;
-  background-color: #90cdff;
+  background-color: #3d99e6;
   padding: 0rem .25rem;
 }
 
@@ -558,6 +557,7 @@ p img {
 .swiper-slide img {
   max-width: none;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -565,6 +565,52 @@ p img {
 .swiper-pagination {
   margin-top: 1rem;
   bottom: -10px;
+}
+
+.blog-post-sec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: .8rem;
+          column-gap: .8rem;
+  row-gap: 1.6rem;
+}
+
+.blog-item-container {
+  display: -ms-grid;
+  display: grid;
+  grid-area: span 1;
+  width: 100%;
+  height: calc(50vw + -1.2rem);
+  background-size: cover;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  row-gap: .5rem;
+}
+
+.blog-item-container .blog-date-banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: .4rem;
+}
+
+.blog-item-container div p {
+  line-height: 1.2rem;
+  padding: 0rem;
+  margin: 0rem .8rem;
+  text-align: center;
+}
+
+.blog-post-cc h1 {
+  margin: 1rem;
 }
 
 @media only screen and (min-width: 34rem) {
@@ -617,6 +663,28 @@ p img {
   .faqCard {
     grid-column: span 2;
     padding: 0rem 1rem;
+  }
+  .img-slider-cc {
+    height: 55vw;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+  }
+  header .logo-head .head-cont {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logo";
+  }
+  header .logo-head .head-cont #menu-search {
+    display: none;
+  }
+  .cc-number {
+    display: -ms-grid;
+    display: grid;
+    margin: 0rem .8rem;
   }
 }
 

@@ -60,3 +60,26 @@
     grid-column: span 2;
     padding: 0rem 1rem;
 }
+
+.img-slider-cc{
+    height: 55vw;
+}
+
+header{
+    display: grid;
+    .logo-head{
+        .head-cont{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "logo";
+          #menu-search{
+              display: none;
+          }
+        }
+    }
+}
+
+.cc-number{
+    display: grid;
+    margin: 0rem .8rem;
+}
