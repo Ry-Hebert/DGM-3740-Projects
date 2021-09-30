@@ -18,4 +18,4 @@ menuToggle = (x) =>
         navTog.classList.add('menuToggle')
         toggle = 0;
     }
-};
+}

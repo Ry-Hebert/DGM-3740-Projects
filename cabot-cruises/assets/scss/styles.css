@@ -141,7 +141,8 @@ header div {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #3d99e6;
+  background-color: #fff;
+  color: #000000;
 }
 
 header div div {
@@ -685,6 +686,14 @@ p img {
     display: -ms-grid;
     display: grid;
     margin: 0rem .8rem;
+  }
+  #med-lg-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    padding: .8rem;
   }
 }
 

@@ -65,7 +65,8 @@ header
         @extend %flex-col;
         justify-content: flex-end;
         flex-wrap: wrap;
-        background-color: $color2;
+        background-color: #fff;
+        color: #000000;
         div
         {
             display: flex;
