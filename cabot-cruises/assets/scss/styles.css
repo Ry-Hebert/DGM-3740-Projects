@@ -693,7 +693,9 @@ p img {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     max-width: 100%;
-    padding: .8rem;
+  }
+  #med-lg-menu input {
+    margin: .5rem;
   }
 }
 

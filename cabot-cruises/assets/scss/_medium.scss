@@ -88,5 +88,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
-    padding: .8rem;
+    input{
+        margin: .5rem;
+    }
 }
