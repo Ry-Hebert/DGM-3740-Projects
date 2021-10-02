@@ -91,7 +91,7 @@ header nav, header nav ul, .logo-head, #menu-search {
           flex-direction: row;
 }
 
-header, header div, .landing-page, section, footer, .body-text, .ham-menu, .ham-menu2, .smNav .smNav, .smNav ul {
+header, header div, .landing-page, footer, .body-text, .ham-menu, .ham-menu2, .smNav .smNav, .smNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ header, .landing-page, .smNav .smNav, .smNav ul {
 }
 
 header nav, header nav ul, section, footer div, .smNav .smNav, .smNav ul {
-  max-width: 75rem;
+  max-width: 1200px;
 }
 
 header {
@@ -133,9 +133,14 @@ body {
 header {
   font-size: 1.2rem;
   width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  background-color: #fff;
 }
 
 header div {
+  max-width: 1200px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -163,6 +168,7 @@ header div div h2 {
 
 header nav {
   width: 100%;
+  max-width: 1200px;
   background-color: #81bdef;
 }
 
@@ -193,9 +199,14 @@ header nav ul li:hover {
 }
 
 section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0rem .8rem;
 }
 
@@ -529,6 +540,7 @@ p img {
 }
 
 .img-slider-cc {
+  max-width: 100%;
   width: 100vw;
   height: 100vw;
   padding: 0rem 0rem 1rem;
@@ -614,6 +626,19 @@ p img {
   margin: 1rem;
 }
 
+.footer-contact-cc a {
+  text-decoration: none;
+  color: #eee;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media only screen and (min-width: 34rem) {
   .med-lg {
     display: block;
@@ -666,7 +691,7 @@ p img {
     padding: 0rem 1rem;
   }
   .img-slider-cc {
-    height: 55vw;
+    height: 50vw;
   }
   header {
     display: -ms-grid;
@@ -692,10 +717,70 @@ p img {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    max-width: 100%;
   }
   #med-lg-menu input {
     margin: .5rem;
+  }
+  footer .footer-container-main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "contact news" "why why";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-container-main .footer-contact-cc {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact;
+  }
+  footer .footer-container-main .footer-news-cc {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: news;
+    margin: 0rem;
+    width: 66%;
+  }
+  footer .footer-container-main .footer-why-cc {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: why;
+    display: -ms-grid;
+    display: grid;
+  }
+  footer .footer-container-main .footer-why-cc h3 {
+    text-align: left;
+  }
+  .blog-post-sec {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blog-item-container {
+    height: calc(33vw + -1.2rem);
+    max-height: calc(1200px / 3);
+  }
+  .blog-post-cc {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-container {
+    width: 100%;
+    min-width: 100%;
+    background-color: #81bdef;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #eee;
+  }
+  nav {
+    width: 100vw;
+    max-width: 12000px;
   }
 }
 
@@ -766,6 +851,17 @@ p img {
   }
   .faqCard {
     grid-column: span 2;
+  }
+  .img-slider-cc {
+    height: 45vw;
+  }
+  .blog-post-sec {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .blog-item-container {
+    height: calc(25vw + -1.2rem);
+    max-height: calc(1200px/4);
   }
 }
 /*# sourceMappingURL=styles.css.map */

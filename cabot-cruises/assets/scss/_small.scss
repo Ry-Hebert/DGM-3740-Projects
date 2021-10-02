@@ -1,4 +1,4 @@
-$max-width: 75rem;
+$max-width: 1200px;
 
 $color1: #222;
 
@@ -60,8 +60,12 @@ header
     @extend %flex-col, %align-items-cent, %clear-mp;
     font-size: 1.2rem;
     width: 100vw;
+    display: grid;
+    justify-items: center;
+    background-color: #fff;
     div
     {
+        max-width: $max-width;
         @extend %flex-col;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -86,6 +90,7 @@ header
     {
         @extend %flex-row, %just-cont-center, %mx-width;
         width: 100%;
+        max-width: $max-width;
         background-color: lighten($color2, 15%);
         ul
         {
@@ -122,9 +127,11 @@ header
 
 section
 {
-    @extend %flex-col, %mx-width;
+    @extend %mx-width;
+    display: grid;
+    justify-self: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0rem .8rem;
     h2
     {
@@ -474,7 +481,7 @@ p
 }
 
 .img-slider-cc{
-    // max-width: 100%;
+    max-width: 100%;
     width: 100vw;
     height: 100vw;
     padding: 0rem 0rem 1rem;
@@ -550,4 +557,16 @@ p
     h1{
         margin: 1rem;
     }
+}
+
+.footer-contact-cc{
+    a{
+        text-decoration: none;
+        color: #eee;
+    }
+}
+
+main{
+    display: grid;
+    justify-content: center;
 }
