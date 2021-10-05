@@ -558,15 +558,15 @@ p img {
 }
 
 #blog-item2 {
-  background-image: url("./assets/img/blog2.jpg");
+  background-image: url("../../assets/img/blog2.jpg");
 }
 
 #blog-item3 {
-  background-image: url("./assets/img/blog3.jpg");
+  background-image: url("../../assets/img/blog3.jpg");
 }
 
 #blog-item4 {
-  background-image: url("./assets/img/blog4.jpg");
+  background-image: url("../../assets/img/blog4.jpg");
 }
 
 .swiper-slide img {
