@@ -877,6 +877,7 @@ main {
   }
   .img-slider-cc {
     height: 45vw;
+    max-height: 350px;
   }
   .blog-post-sec {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
