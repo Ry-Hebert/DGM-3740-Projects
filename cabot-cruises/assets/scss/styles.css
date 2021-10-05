@@ -549,6 +549,8 @@ p img {
 .swiper {
   width: 100%;
   height: 100%;
+  max-height: 350;
+  max-width: 1200px;
 }
 
 #blog-item1 {
@@ -631,12 +633,34 @@ p img {
   color: #eee;
 }
 
+.footer-contact-cc h3 {
+  margin-bottom: .4rem;
+}
+
+.footer-contact-cc h3.contact-sec {
+  margin-top: 1rem;
+}
+
 main {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.blog-link {
+  text-decoration: none;
+  color: #eee;
+  opacity: 75%;
+}
+
+.blog-link:hover {
+  opacity: 100%;
+}
+
+.icons i:hover {
+  color: #aaa;
 }
 
 @media only screen and (min-width: 34rem) {
@@ -773,9 +797,8 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     color: #eee;
   }
   nav {
