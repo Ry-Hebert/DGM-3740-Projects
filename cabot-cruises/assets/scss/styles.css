@@ -669,6 +669,21 @@ main {
   color: #000;
 }
 
+.subnav-div {
+  display: none;
+  background-color: #1b80d5;
+  font-size: 1rem;
+  margin: .8rem 0rem;
+}
+
+.subnav-parent:hover .subnav-div {
+  display: block;
+}
+
+.subnav-item:hover {
+  background-color: #1665a7;
+}
+
 @media only screen and (min-width: 34rem) {
   .med-lg {
     display: block;
@@ -807,6 +822,31 @@ main {
   nav {
     width: 100vw;
     max-width: 12000px;
+  }
+  .openMenu {
+    display: none;
+  }
+  .subnav-parent:hover .subnav-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 500;
+    width: inherit;
+  }
+  .subnav-parent:hover .subnav-div .subnav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .subnav-parent:hover .subnav-div .subnav .subnav-item {
+    width: 100%;
   }
 }
 

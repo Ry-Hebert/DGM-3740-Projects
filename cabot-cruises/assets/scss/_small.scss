@@ -604,3 +604,26 @@ main{
 .nav-link.dark{
     color: #000;
 }
+
+.subnav-div{
+    display: none;
+    background-color: darken( $color2, 10%);
+    font-size: 1rem;
+    margin: .8rem 0rem;
+}
+
+.subnav-parent:hover{
+    .subnav-div{
+        display: block;
+    }
+}
+
+.subnav-item:hover{
+    background-color: darken( $color2, 20%)
+}
+
+// .subnav-parent:focus{
+//     .subnav-div{
+//         display: block;
+//     }
+// }

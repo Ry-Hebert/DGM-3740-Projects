@@ -151,3 +151,30 @@ nav{
     width: 100vw;
     max-width: 12000px;
 }
+
+.openMenu{
+    display: none;
+}
+
+// .subnav-div{
+//     // display: none;
+//     // font-size: 1rem;
+//     // margin: .8rem 0rem;
+// }
+
+.subnav-parent:hover{
+    .subnav-div{
+        display: flex;
+        position: fixed;
+        z-index: 500;
+        width: inherit;
+        .subnav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .subnav-item{
+                width: 100%;
+            }
+        }
+    }
+}
