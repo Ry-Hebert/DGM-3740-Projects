@@ -18,8 +18,8 @@
     <header>
         <div class="logo-head">
             <div class="head-cont">
-                <div id="name-slogan"> 
-                    <img srcset="./assets/img/ccLogo_x1.svg 1x,./assets/img/ccLogo_x2.svg 2x,./assets/img/ccLogo_x3.svg 3x" class="logo-class" alt="Cabot Cruises Logo">
+                <div id="name-slogan">
+                    <img class="logo-class" alt="Cabot Cruises Logo">
                 </div>
                 <div id="menu-search">
                     <div class="ham-menu" id="m1" onclick="menuToggle(0)">
@@ -28,46 +28,32 @@
                     <div class="ham-menu menuToggle" id="m2" onclick="menuToggle(1)">
                         <i class="fas fa-bars"></i>
                     </div>
-                    <input class="searchField" type="search" placeholder="Search...">
+                    <input id="searchField" type="search" placeholder="Search...">
                 </div>
                 <div class="openMenu menuToggle">
                     <nav class='smNav'>
                         <ul class="smNav nav-menu">
-                            <li class="active"><a class="nav-link" href="#">Home</a></li>
-                            <li><a class="nav-link" href="#">Cruises</a></li>
-                            <li class="nav-link subnav-parent">Agents <i class="fa fa-caret-down"></i>
-                                <div class="subnav-div">
-                                    <ul class="subnav">
-                                        <li class="subnav-item"><a class="nav-link">Agents 1</a></li>
-                                        <li class="subnav-item"><a class="nav-link">Agents 2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a class="nav-link" href="#">Book</a></li>
+                            <li class="active">Home</li>
+                            <li>Cruises</li>
+                            <li>Agents</li>
+                            <li>Book</li>
                         </ul>
                     </nav>
                 </div>
                 <div class="med-lg cc-number">
-                    <div><a class="nav-link dark" href="tel:18005551234">1-800-555-1234</a></div>
+                    <div>1-800-555-1234</div>
                 </div>
             </div>
         </div>
         <div class='med-lg nav-container'>
         <nav class='med-lg' id="med-lg-menu">
             <ul class="nav-menu">
-                <li class="active"><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Cruises</a></li>
-                <li class="nav-link subnav-parent">Agents <i class="fa fa-caret-down"></i>
-                    <div class="subnav-div">
-                        <ul class="subnav">
-                            <li class="subnav-item"><a class="nav-link">Agents 1</a></li>
-                            <li class="subnav-item"><a class="nav-link">Agents 2</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="nav-link" href="#">Book</a></li>
+                <li class="active">Home</li>
+                <li>Cruises</li>
+                <li>Agents</li>
+                <li>Book</li>
             </ul>
-            <input class="searchField" type="search" placeholder="Search...">
+            <input id="searchField" type="search" placeholder="Search...">
         </nav>
         </div>
     </header>

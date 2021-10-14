@@ -110,7 +110,7 @@ header
     }
 }
 
-.searchField
+#searchField
 {
     background-color: #fff;
     border-radius: 5rem;
@@ -477,20 +477,20 @@ p
 .logo-class{
     // font-size: 2rem;
     width: 6rem;
-    // content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
+    content: image-set(url(../img/ccLogo_x1.svg) 1x, url(../img/ccLogo_x2.svg) 2x, url(../img/ccLogo_x3.svg) 3x);
 }
 
 .img-slider-cc{
     max-width: 100%;
     width: 100vw;
-    // height: 100vw;
+    height: 100vw;
     padding: 0rem 0rem 1rem;
 }
 
 .swiper{
     width: 100%;
     height: 100%;
-    max-height: 350px;
+    max-height: 350;
     max-width: $max-width;
 }
 
@@ -595,35 +595,3 @@ main{
         }
     }
 }
-
-.nav-link{
-    text-decoration: none;
-    color: #eee;
-}
-
-.nav-link.dark{
-    color: #000;
-}
-
-.subnav-div{
-    display: none;
-    background-color: darken( $color2, 10%);
-    font-size: 1rem;
-    margin: .8rem 0rem;
-}
-
-.subnav-parent:hover{
-    .subnav-div{
-        display: block;
-    }
-}
-
-.subnav-item:hover{
-    background-color: darken( $color2, 20%)
-}
-
-// .subnav-parent:focus{
-//     .subnav-div{
-//         display: block;
-//     }
-// }
