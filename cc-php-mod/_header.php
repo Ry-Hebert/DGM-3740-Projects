@@ -43,6 +43,7 @@
                                 </div>
                             </li>
                             <li><a class="nav-link" href="#">Book</a></li>
+                            <li><a class="nav-link dark" href="tel:18005551234">1-800-555-1234</a></li>
                         </ul>
                     </nav>
                 </div>
