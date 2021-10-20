@@ -6,5 +6,9 @@ $pageTitle = 'Book';
 include './_header.php';
 ?>
 
+<main>
+    
+</main>
+
 <?php include '_footer.php' ?>
 </html>
