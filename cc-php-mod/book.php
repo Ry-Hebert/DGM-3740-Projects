@@ -6,7 +6,7 @@ $pageTitle = 'Book';
 include './_header.php';
 ?>
 
-<main>
+<main class="booking-page">
     <h1>Book A Cruise</h1>
     <div class="booking-form">
         <form>

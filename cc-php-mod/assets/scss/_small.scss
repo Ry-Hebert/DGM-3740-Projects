@@ -621,3 +621,23 @@ main{
 .nav-link.dark{
     color: #000;
 }
+
+.booking-page{
+    margin: 2rem 0rem;
+    width: 100%;
+    h1{
+        min-width: 100%;
+    }
+}
+
+.form-in-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.booking-form{
+    width: 100%;
+    min-width: 100%;
+}
+
