@@ -623,10 +623,11 @@ main{
 }
 
 .booking-page{
-    margin: 2rem 0rem;
     width: 100%;
+    grid-template-columns: 1fr;
+    padding: 1rem;
     h1{
-        min-width: 100%;
+        margin: 1rem 0rem;
     }
 }
 
@@ -634,10 +635,15 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: .8rem 0rem;
+    select{
+        font-size: 1.2rem;
+        border-radius: 0rem;
+    }
 }
 
 .booking-form{
     width: 100%;
-    min-width: 100%;
+    // min-width: 100%;
 }
 

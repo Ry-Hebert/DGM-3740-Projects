@@ -685,12 +685,14 @@ main {
 }
 
 .booking-page {
-  margin: 2rem 0rem;
   width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 1rem;
 }
 
 .booking-page h1 {
-  min-width: 100%;
+  margin: 1rem 0rem;
 }
 
 .form-in-item {
@@ -702,11 +704,16 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin: .8rem 0rem;
+}
+
+.form-in-item select {
+  font-size: 1.2rem;
+  border-radius: 0rem;
 }
 
 .booking-form {
   width: 100%;
-  min-width: 100%;
 }
 
 @media only screen and (min-width: 34rem) {
