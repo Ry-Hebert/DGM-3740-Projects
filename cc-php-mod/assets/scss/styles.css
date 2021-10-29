@@ -685,9 +685,7 @@ main {
 }
 
 .booking-page {
-  width: 100%;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  min-width: 100%;
   padding: 1rem;
 }
 
@@ -714,6 +712,21 @@ main {
 
 .booking-form {
   width: 100%;
+}
+
+.form-submit {
+  height: 3rem;
+  margin: 3rem 0rem;
+  font-size: 1.2rem;
+}
+
+.form-submit input {
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.form-submit input:hover {
+  background-color: #999;
 }
 
 @media only screen and (min-width: 34rem) {
@@ -879,6 +892,35 @@ main {
   }
   .subnav-parent:hover .subnav-div .subnav .subnav-item {
     width: 100%;
+  }
+  .booking-page {
+    max-width: calc(1200px / 3);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .booking-page {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1200px 1fr;
+        grid-template-columns: 1fr 1200px 1fr;
+        grid-template-areas: ". content1 ." ". content2 .";
+    margin: 0rem;
+  }
+  .booking-page h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: content1;
+    max-width: calc(1200px / 3);
+  }
+  .booking-page .booking-form {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: content2;
+    max-width: calc(1200px / 3);
   }
 }
 

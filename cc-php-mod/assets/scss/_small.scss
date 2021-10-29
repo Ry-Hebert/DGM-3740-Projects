@@ -623,8 +623,8 @@ main{
 }
 
 .booking-page{
-    width: 100%;
-    grid-template-columns: 1fr;
+    min-width: 100%;
+    // grid-template-columns: 1fr;
     padding: 1rem;
     h1{
         margin: 1rem 0rem;
@@ -647,3 +647,16 @@ main{
     // min-width: 100%;
 }
 
+.form-submit{
+    height: 3rem;
+    margin: 3rem 0rem;
+    font-size: 1.2rem;
+    
+    input{
+        height: 5rem;
+        border-radius: 5rem;
+        &:hover{
+            background-color: #999;
+        }
+    }
+}
