@@ -660,3 +660,25 @@ main{
         }
     }
 }
+
+.agent-page{
+    display: grid;
+    justify-content: center;
+}
+
+.agent-sec{
+    max-width: $max-width;
+    font-size: 1.2rem;
+    h1{
+        padding: .5rem 0rem;
+    }
+}
+
+.agent-item{
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        padding: .5rem 0rem .5rem
+    }
+}
