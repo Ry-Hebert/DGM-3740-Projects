@@ -10,12 +10,12 @@ include './_header.php';
             <section class="img-slider-cc">
                 <div class="swiper swiper1">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./assets/img/banner5.jpg" alt="Cruise ship sailing past mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.jpg" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./assets/img/banner2.jpg" alt="Girl looking off the deck of ship out to sea." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./assets/img/banner3.jpg" alt="Multiple ships set against steep mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./assets/img/banner4.jpg" alt="Small pictures town and cruise ship among the mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./assets/img/banner6.jpg" alt="Bride and Groom standing at the bow of the ship." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner5.webp" alt="Cruise ship sailing past mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/cruise-test-1.webp" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner2.webp" alt="Girl looking off the deck of ship out to sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner3.webp" alt="Multiple ships set against steep mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner4.webp" alt="Small pictures town and cruise ship among the mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner6.webp" alt="Bride and Groom standing at the bow of the ship." loading='lazy'></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

@@ -921,6 +921,14 @@ main {
   .booking-page {
     max-width: calc(1200px / 3);
   }
+  .agent-photo {
+    max-width: calc(1200px / 2);
+    float: right;
+  }
+  .agent-sec {
+    margin: 2rem 0rem;
+    float: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1028,6 +1036,9 @@ main {
   .blog-item-container {
     height: calc(25vw + -1.2rem);
     max-height: calc(1200px/4);
+  }
+  .agent-photo {
+    max-width: calc(1200px / 3);
   }
 }
 /*# sourceMappingURL=styles.css.map */
