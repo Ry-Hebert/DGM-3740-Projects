@@ -2,18 +2,18 @@
 <html lang="en">
 
 <?php
-$pageTitle = 'Agent 1';
+$pageTitle = 'Agent 2';
 include './_header.php';
 ?>
 
 <main class="agent-page">
     <section class="agent-sec">
-        <h1>Agent-Wendi Wadsworth</h1>
+        <h1>Agent-Wendel Wadsworth</h1>
         <div class="agent-body">
-            <img class="agent-photo" src="./assets/img/agent1.jpg" alt="Agent Wendi Wadsworth headshot">
+            <img class="agent-photo" src="./assets/img/agent2.jpg" alt="Agent Wendel Wadsworth headshot">
             <div class="agent-item">
                 <h3>Phone:</h3>
-                <p><a class="nav-link" href="tel:18005551234">1-800-555-1234</a></p>
+                <p><a class="nav-link" href="tel:18005551234">1-800-555-5678</a></p>
             </div>
             <div class="agent-item">
                 <h3>Working:</h3>
@@ -29,9 +29,9 @@ include './_header.php';
             </div>
             <div class="agent-item">
                 <h3>Biography:</h3>
-                <p>I have loved travel for as long as I can remember. At the age of 12 I asked if I could fly by myself to Hawaii and I never came back.
+                <p>Travel professionals must have a deep interest in travel and keep up with the destination, activities, and expectations that a variety of modern travelers have and beyond a doubt this is me. My whole life seems like it has been dedicated to traveling the world and experiencing the variety it has to share with us and now I professionally help others to plan their dream vacations. 
                 <br><br>
-                Right out of high school I started into travel school and have had the opportunity to work in many aspects of the industry. In every aspect I have worked I have had the opportunity to help people travel, to help fulfill people?s dreams, what could be be6er to do every day!</p>
+                Let's set up a time to meet today so we can schedule your dream get away and do so in the way that would be most comfortable to you.</p>
             </div>
             <div class="agent-item">
                 <h3>Customer Comment:</h3>

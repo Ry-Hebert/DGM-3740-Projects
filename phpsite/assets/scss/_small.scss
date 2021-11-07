@@ -682,3 +682,32 @@ main{
         padding: .5rem 0rem .5rem
     }
 }
+
+.cruise-info{
+    margin: 2rem 0rem;
+    font-size: 1.2rem;
+}
+
+.cruise-info-sec{
+    .c-info-item{
+        .c-details{
+            p{
+                padding: .5rem 0rem 1.5rem 0rem;
+            }
+            button{
+                margin: 0rem 0rem 2rem;
+                border-radius: 5rem;
+                width: 95%;
+                background-color: #fff;
+                border-style: none;
+                &:hover{
+                    background-color: #aaa;
+                }
+            }
+        }
+    }
+}
+
+.c-info-h{
+    margin: 1rem 0rem;
+}

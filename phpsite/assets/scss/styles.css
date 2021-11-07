@@ -754,6 +754,31 @@ main {
   padding: .5rem 0rem .5rem;
 }
 
+.cruise-info {
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+}
+
+.cruise-info-sec .c-info-item .c-details p {
+  padding: .5rem 0rem 1.5rem 0rem;
+}
+
+.cruise-info-sec .c-info-item .c-details button {
+  margin: 0rem 0rem 2rem;
+  border-radius: 5rem;
+  width: 95%;
+  background-color: #fff;
+  border-style: none;
+}
+
+.cruise-info-sec .c-info-item .c-details button:hover {
+  background-color: #aaa;
+}
+
+.c-info-h {
+  margin: 1rem 0rem;
+}
+
 @media only screen and (min-width: 34rem) {
   .med-lg {
     display: block;
@@ -929,6 +954,36 @@ main {
     margin: 2rem 0rem;
     float: left;
   }
+  .cruise-info-sec .c-info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    margin: 2rem 0rem;
+  }
+  .cruise-info-sec .c-info-item .c-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cruise-info-sec .c-info-item .c-details {
+    max-width: calc(1600px / 2);
+  }
+  .cruise-info-sec .c-info-item .c-details h3 {
+    margin: 0rem 0rem 1rem;
+  }
+  .cruise-info-sec .c-info-item .c-details button {
+    max-width: 10rem;
+    float: right;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1039,6 +1094,32 @@ main {
   }
   .agent-photo {
     max-width: calc(1200px / 3);
+  }
+  .cruise-info-sec .c-info-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    margin: 2rem 0rem;
+  }
+  .cruise-info-sec .c-info-item .c-image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cruise-info-sec .c-info-item .c-details {
+    max-width: calc(1600px / 2);
+  }
+  .cruise-info-sec .c-info-item .c-details button {
+    max-width: 15rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
