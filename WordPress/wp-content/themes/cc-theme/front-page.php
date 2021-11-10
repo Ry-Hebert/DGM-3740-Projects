@@ -3,7 +3,7 @@
 
 <?php
 $pageTitle = 'Home';
-include './_header.php';
+include '_header.php';
 ?>
     <div class="landing-page">
         <main>
