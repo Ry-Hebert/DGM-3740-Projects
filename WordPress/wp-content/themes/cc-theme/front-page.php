@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
 $pageTitle = 'Home';
-include '_header.php';
+// include '_header.php';
+get_header()
 ?>
     <div class="landing-page">
         <main>
             <section class="img-slider-cc">
                 <div class="swiper swiper1">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/banner5.webp" alt="Cruise ship sailing past mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/cruise-test-1.webp" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/banner2.webp" alt="Girl looking off the deck of ship out to sea." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/banner3.webp" alt="Multiple ships set against steep mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/banner4.webp" alt="Small pictures town and cruise ship among the mountains." loading='lazy'></div>
-                        <div class="swiper-slide"><img src="./theme-template/assets/img/banner6.webp" alt="Bride and Groom standing at the bow of the ship." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner5.webp" alt="Cruise ship sailing past mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/cruise-test-1.webp" alt="Two happy people on a cruise looking out at sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner2.webp" alt="Girl looking off the deck of ship out to sea." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner3.webp" alt="Multiple ships set against steep mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner4.webp" alt="Small pictures town and cruise ship among the mountains." loading='lazy'></div>
+                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/banner6.webp" alt="Bride and Groom standing at the bow of the ship." loading='lazy'></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -59,5 +57,7 @@ include '_header.php';
             </section>
         </main>
     </div>
-<?php include '_footer.php' ?>
-</html>
+<?php
+    // include '_footer.php' 
+    get_footer()
+?>
