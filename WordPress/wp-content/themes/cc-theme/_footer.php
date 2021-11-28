@@ -23,6 +23,7 @@
             <i class="fab fa-facebook-square"></i><i class="fab fa-youtube"></i><i class="fab fa-instagram"></i><i class="fab fa-pinterest"></i><i class="fab fa-twitter"></i>
         </div>
         <h4>&copy; &bull; Ryan Hébert &bull; ryanhébert.com</h4>
+        <a href="./wp-admin/"><p>Admin Login</p></a>
     </footer>
     <?php
         wp_footer();

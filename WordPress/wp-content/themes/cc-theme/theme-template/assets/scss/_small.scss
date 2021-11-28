@@ -495,19 +495,19 @@ p
 }
 
 #blog-item1{
-    background-image: url('../../assets/img/blog1.webp');
+    background-image: url('./assets/img/blog1.webp');
 }
 
 #blog-item2{
-    background-image: url('../../assets/img/blog2.webp');
+    background-image: url('./assets/img/blog2.webp');
 }
 
 #blog-item3{
-    background-image: url('../../assets/img/blog3.webp');
+    background-image: url('./assets/img/blog3.webp');
 }
 
 #blog-item4{
-    background-image: url('../../assets/img/blog4.webp');
+    background-image: url('./assets/img/blog4.webp');
 }
 
 .swiper-slide{
@@ -710,4 +710,12 @@ main{
 
 .c-info-h{
     margin: 1rem 0rem;
+}
+
+.admin-login{
+    text-decoration: none;
+    color: #eee;
+    &:hover{
+        color: #aaa;
+    }
 }

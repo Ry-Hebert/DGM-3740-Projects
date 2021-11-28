@@ -779,6 +779,11 @@ main {
   margin: 1rem 0rem;
 }
 
+.admin-login {
+  text-decoration: none;
+  color: #eee;
+}
+
 @media only screen and (min-width: 34rem) {
   .med-lg {
     display: block;
