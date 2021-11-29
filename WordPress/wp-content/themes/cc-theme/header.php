@@ -23,7 +23,7 @@
             <div class="logo-head">
                 <div class="head-cont">
                     <div id="name-slogan">
-                        <img srcset="./assets/img/ccLogo_x1.svg 1x,./assets/img/ccLogo_x2.svg 2x,./assets/img/ccLogo_x3.svg 3x" class="logo-class" alt="Cabot Cruises Logo">
+                        <img srcset="<?php echo get_template_directory_uri(); ?>/assets/img/ccLogox1.svg 1x,<?php echo get_template_directory_uri(); ?>/assets/img/ccLogox2.svg 2x,<?php echo get_template_directory_uri(); ?>/assets/img/ccLogox3.svg 3x" class="logo-class" alt="Cabot Cruises Logo">
                     </div>
                     <div id="menu-search">
                         <div class="ham-menu" id="m1" onclick="menuToggle(0)">
