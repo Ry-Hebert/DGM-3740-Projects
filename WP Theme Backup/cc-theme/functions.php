@@ -29,11 +29,6 @@ function cc_register_scripts(){
 
 add_action( 'wp_enqueue_scripts', 'cc_register_scripts');
 
-register_nav_menu( 'siteNav', 'mainMenu');
-
-remove_filter( 'the_content', 'wpautop' );
-remove_filter( 'the_excerpt', 'wpautop' );
-remove_filter( 'the_content', 'wpautoa' );
-remove_filter( 'the_excerpt', 'wpautoa' );
+register_nav_menu( 'siteNav', 'mainMenu')
 
 ?> 

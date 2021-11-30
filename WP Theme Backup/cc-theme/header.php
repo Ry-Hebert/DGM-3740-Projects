@@ -36,10 +36,6 @@
                     </div>
                     <div class="openMenu menuToggle">
                         <nav class='smNav'>
-                            <?php 
-                                wp_nav_menu(
-                                )
-                            ?>
                             <ul class="smNav nav-menu">
                                 <li <?= ($activePage == 'index') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./index.php">Home</a></li>
                                 <li <?= ($activePage == 'cruises') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./cruises.php">Cruises</a></li>
@@ -62,22 +58,22 @@
                 </div>
             </div>
             <div class='med-lg nav-container'>
-                <nav class='med-lg' id="med-lg-menu">
-                    <ul class="nav-menu">
-                    <li <?= ($activePage == 'index') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./index.php">Home</a></li>
-                    <li <?= ($activePage == 'cruises') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./cruises.php">Cruises</a></li>
-                    <li class="nav-link subnav-parent <?= ($activePage == 'agent1') ? 'active' : (($activePage == 'agent2') ? 'active' : ''); ?>">Agents <i class="fa fa-caret-down"></i>
-                            <div class="subnav-div">
-                                <ul class="subnav">
-                                    <li class="subnav-item"><a class="nav-link" href="./agent1.php">Agents 1</a></li>
-                                    <li class="subnav-item"><a class="nav-link" href="./agent1.php">Agents 2</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a class="nav-link" href="./book.php">Book</a></li>
-                    </ul>
-                    <input class="searchField" type="search" placeholder="Search...">
-                </nav>
+            <nav class='med-lg' id="med-lg-menu">
+                <ul class="nav-menu">
+                <li <?= ($activePage == 'index') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./index.php">Home</a></li>
+                <li <?= ($activePage == 'cruises') ? 'class="active"' : ''; ?> ><a class="nav-link" href="./cruises.php">Cruises</a></li>
+                <li class="nav-link subnav-parent <?= ($activePage == 'agent1') ? 'active' : (($activePage == 'agent2') ? 'active' : ''); ?>">Agents <i class="fa fa-caret-down"></i>
+                        <div class="subnav-div">
+                            <ul class="subnav">
+                                <li class="subnav-item"><a class="nav-link" href="./agent1.php">Agents 1</a></li>
+                                <li class="subnav-item"><a class="nav-link" href="./agent1.php">Agents 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="./book.php">Book</a></li>
+                </ul>
+                <input class="searchField" type="search" placeholder="Search...">
+            </nav>
             </div>
         </header>
 <?php wp_nav_menu()?>

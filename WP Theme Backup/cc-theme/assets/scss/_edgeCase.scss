@@ -1,0 +1,20 @@
+.booking-page{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-areas: 
+        ". content1 ."
+        ". content2 ."
+        ;
+    margin: 0rem;
+    h1{
+        // display: grid;
+        grid-area: content1;
+        max-width: calc(1200px / 3);
+    }
+    .booking-form{
+        // display: grid;
+        grid-area: content2;
+        max-width: calc(1200px / 3);
+    }
+}

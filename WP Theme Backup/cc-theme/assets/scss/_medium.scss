@@ -1,0 +1,222 @@
+$color2: #3d99e6;
+
+.med-lg
+{
+    display: block;
+}
+
+.ham-menu
+{
+    display: none;
+}
+
+.head-cont
+{
+    flex-direction: row;
+    #menu-search
+    {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 40%;
+        padding: 1rem 0rem;
+    }
+}
+
+.pCard
+{
+    grid-column: span 3;
+    height: 45vw;
+}
+
+.mainPointsNav
+{
+    grid-column: span 4;
+}
+
+.blogPost
+{
+    grid-column: span 6;
+    background-color: transparent;
+    .bpInner
+    {
+        background-color: #806441;
+        h3, p
+        {
+            padding: 0rem 1rem;
+        }
+    }
+    h5
+    {
+        text-align: center;
+    }
+}
+
+.tipOTD
+{
+    grid-column: span 6;
+    padding: 0rem 1rem;
+}
+
+.faqCard
+{
+    grid-column: span 2;
+    padding: 0rem 1rem;
+}
+
+// .img-slider-cc{
+//     height: 50vw;
+// }
+
+header{
+    display: grid;
+    .logo-head{
+        .head-cont{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "logo";
+          #menu-search{
+              display: none;
+          }
+        }
+    }
+}
+
+.cc-number{
+    display: grid;
+    margin: 0rem .8rem;
+}
+
+#med-lg-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // max-width: 100%;
+    input{
+        margin: .5rem;
+    }
+}
+
+footer{
+    .footer-container-main{
+        display: grid;
+        grid-template-areas: 
+            "contact news"
+            "why why";
+        grid-template-columns: 1fr 1fr;
+        .footer-contact-cc{
+            grid-area: contact;
+        }
+        .footer-news-cc{
+            grid-area: news;
+            margin: 0rem;
+            width: 66%;
+            h3{
+                // margin: 0rem;
+                // padding: 0rem;
+            }
+            p{
+                // margin: 0rem;
+                // padding: 0rem;
+            }
+        }
+        .footer-why-cc{
+            grid-area: why;
+            display: grid;
+            h3{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.blog-post-sec{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog-item-container{
+    height: calc(33vw + -1.2rem);
+    max-height: calc(1200px / 3);
+}
+
+.blog-post-cc{
+    display: grid;
+    justify-content: center;
+}
+
+.nav-container{
+    width: 100%;
+    min-width: 100%;
+    background-color: lighten($color2, 15%);
+    display: flex;
+    align-content: center;
+    color: #eee;
+}
+
+nav{
+    width: 100vw;
+    max-width: 12000px;
+}
+
+.openMenu{
+    display: none;
+}
+
+// .subnav-div{
+//     // display: none;
+//     // font-size: 1rem;
+//     // margin: .8rem 0rem;
+// }
+
+.subnav-parent:hover{
+    .subnav-div{
+        display: flex;
+        position: fixed;
+        z-index: 500;
+        width: inherit;
+        .subnav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .subnav-item{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.booking-page{
+    max-width: calc(1200px / 3);
+}
+
+.agent-photo{
+    max-width: calc(1200px / 2);
+    float:  right;
+}
+
+.agent-sec{
+    margin: 2rem 0rem;
+    float: left;
+}
+
+.cruise-info-sec{
+    .c-info-item{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        margin: 2rem 0rem;
+        .c-image-container{
+            display: flex;
+            align-items: flex-start;
+        }
+        .c-details{
+            max-width: calc(1600px / 2);
+            h3{
+                margin: 0rem 0rem 1rem;
+            }
+            p{}
+            button{
+                max-width: 10rem;
+                float: right;
+            }
+        }
+    }
+}
