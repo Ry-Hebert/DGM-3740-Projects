@@ -10,7 +10,7 @@ include './_header.php';
     <section class="agent-sec">
         <h1>Agent-Wendel Wadsworth</h1>
         <div class="agent-body">
-            <img class="agent-photo" src="./assets/img/agent2.jpg" alt="Agent Wendel Wadsworth headshot">
+            <img class="agent-photo" src="/wp-content/themes/cc-theme/assets/img/agent2.jpg" alt="Agent Wendel Wadsworth headshot">
             <div class="agent-item">
                 <h3>Phone:</h3>
                 <p><a class="nav-link" href="tel:18005551234">1-800-555-5678</a></p>

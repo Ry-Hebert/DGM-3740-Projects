@@ -195,6 +195,11 @@ footer
     background-color: darken($color2, 10%);
 }
 
+.current-menu-item{
+    background-color: darken($color2, 10%);
+}
+
+
 header
 {
     width: 100%;
@@ -618,6 +623,41 @@ main{
     color: #eee;
 }
 
+.nav-menu{
+    li{
+        a{
+            text-decoration: none;
+            color: #eee;
+        }
+    }
+    .menu-item-has-children:hover{
+        .sub-menu{
+            display: block;    
+        }
+    }
+}
+
+.menu-item-has-children{
+    .sub-menu{
+        display: none;
+        background-color: darken( $color2, 10%);
+        font-size: 1rem;
+        margin: .8rem 0rem;
+        .current-menu-item{
+            background-color: darken( $color2, 20%);
+        }
+        .menu-item:hover{
+            background-color: darken( $color2, 20%)
+        }
+    }
+    &:hover{
+        .sub-menu{
+            display: block;    
+        }
+    }
+}
+
+
 .nav-link.dark{
     color: #000;
 }
@@ -719,3 +759,30 @@ main{
         color: #aaa;
     }
 }
+
+.default-page{
+    margin: 4rem 0rem;
+}
+
+.about-us-page{
+    .content-sec{
+        display: inline;
+    }
+}
+
+.content-sec{
+    .three-col-div{
+        columns: 1;
+        margin: 2rem 0rem;
+    }
+    .destinations-gallery-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .destination-item{
+            width: 45%;
+        }
+    }
+}
+

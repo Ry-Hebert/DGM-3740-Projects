@@ -1,11 +1,13 @@
 <?php
 //remove visual editor
-add_filter( 'user_can_richedit' , '__return_false', 50);
+// add_filter( 'user_can_richedit' , '__return_false', 50);
 
 
 //Title Support
 function cc_theme_support_title(){
     add_theme_support('title-tag');
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'wp-block-styles' );
 }
 
 add_action('after_setup_theme', 'cc_theme_support_title');
@@ -33,7 +35,20 @@ register_nav_menu( 'siteNav', 'mainMenu');
 
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
-remove_filter( 'the_content', 'wpautoa' );
-remove_filter( 'the_excerpt', 'wpautoa' );
+
+function remove_empty_p( $content ) {
+	$content = force_balance_tags( $content );
+	$content = preg_replace( '#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content );
+	$content = preg_replace( '~\s?<p>(\s| )+</p>\s?~', '', $content );
+	return $content;
+}
+add_filter('the_content', 'remove_empty_p', 20, 1);
+
+//** *Enable upload for webp image files.*/
+function webp_upload_mimes($existing_mimes) {
+    $existing_mimes['webp'] = 'image/webp';
+    return $existing_mimes;
+    }
+    add_filter('mime_types', 'webp_upload_mimes');
 
 ?> 

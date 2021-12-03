@@ -169,7 +169,7 @@ nav{
 .subnav-parent:hover{
     .subnav-div{
         display: flex;
-        position: fixed;
+        position: absolute;
         z-index: 500;
         width: inherit;
         .subnav{
@@ -179,6 +179,27 @@ nav{
             .subnav-item{
                 width: 100%;
             }
+        }
+    }
+}
+
+.nav-menu{
+    .menu-item-has-children:hover{
+        .sub-menu{
+            display: flex;    
+            position: absolute;
+            z-index: 500;
+            width: inherit;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+}
+
+.menu-item-has-children{
+    .sub-menu{
+        .menu-item{
+            width: 100%;
         }
     }
 }
@@ -218,5 +239,12 @@ nav{
                 float: right;
             }
         }
+    }
+}
+
+
+.content-sec{
+    .three-col-div{
+        columns: 2;
     }
 }

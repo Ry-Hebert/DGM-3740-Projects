@@ -274,6 +274,10 @@ footer h4 {
   background-color: #1b80d5;
 }
 
+.current-menu-item {
+  background-color: #1b80d5;
+}
+
 header {
   width: 100%;
 }
@@ -689,6 +693,34 @@ main {
   color: #eee;
 }
 
+.nav-menu li a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.nav-menu .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu-item-has-children .sub-menu {
+  display: none;
+  background-color: #1b80d5;
+  font-size: 1rem;
+  margin: .8rem 0rem;
+}
+
+.menu-item-has-children .sub-menu .current-menu-item {
+  background-color: #1665a7;
+}
+
+.menu-item-has-children .sub-menu .menu-item:hover {
+  background-color: #1665a7;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
 .nav-link.dark {
   color: #000;
 }
@@ -795,6 +827,20 @@ main {
 
 .admin-login:hover {
   color: #aaa;
+}
+
+.default-page {
+  margin: 4rem 0rem;
+}
+
+.about-us-page .content-sec {
+  display: inline;
+}
+
+.content-sec .three-col-div {
+  -webkit-columns: 1;
+          columns: 1;
+  margin: 2rem 0rem;
 }
 
 @media only screen and (min-width: 34rem) {
@@ -943,7 +989,7 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 500;
     width: inherit;
   }
@@ -959,6 +1005,23 @@ main {
         justify-content: space-around;
   }
   .subnav-parent:hover .subnav-div .subnav .subnav-item {
+    width: 100%;
+  }
+  .nav-menu .menu-item-has-children:hover .sub-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    width: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu-item-has-children .sub-menu .menu-item {
     width: 100%;
   }
   .booking-page {
@@ -1001,6 +1064,10 @@ main {
   .cruise-info-sec .c-info-item .c-details button {
     max-width: 10rem;
     float: right;
+  }
+  .content-sec .three-col-div {
+    -webkit-columns: 2;
+            columns: 2;
   }
 }
 
@@ -1138,6 +1205,10 @@ main {
   }
   .cruise-info-sec .c-info-item .c-details button {
     max-width: 15rem;
+  }
+  .content-sec .three-col-div {
+    -webkit-columns: 3;
+            columns: 3;
   }
 }
 /*# sourceMappingURL=styles.css.map */
