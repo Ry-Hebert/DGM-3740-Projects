@@ -247,4 +247,18 @@ nav{
     .three-col-div{
         columns: 2;
     }
+    .destinations-gallery-div{
+        .destination-item{
+            width: 32%;
+        }
+    }
+}
+
+.img-slider-cc{
+    height: auto;
+    max-height: none;
+    .swiper{
+        height: auto;
+        max-height: none;
+    }
 }

@@ -49,8 +49,12 @@
 }
 
 .img-slider-cc{
-    height: 45vw;
-    max-height: 350px;
+    height: auto;
+    max-height: none;
+    .swiper{
+        height: auto;
+        max-height: none;
+    }
 }
 
 .blog-post-sec{
@@ -90,5 +94,10 @@
 .content-sec{
     .three-col-div{
         columns: 3;
+    }
+    .destinations-gallery-div{
+        .destination-item{
+            width: 23%;
+        }
     }
 }
