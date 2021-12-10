@@ -204,7 +204,7 @@ header nav ul li:hover {
 }
 
 .landing-page {
-  width: 100vw;
+  margin: 0rem .5rem;
 }
 
 section {
@@ -216,7 +216,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0rem .8rem;
 }
 
 section h2 {
@@ -900,6 +899,99 @@ main {
 .location-map .mapouter .gmap_canvas #gmap_canvas {
   height: 100%;
   width: 100%;
+}
+
+.serviceAreas-header {
+  text-align: center;
+  padding: 0rem .8rem;
+}
+
+.serviceAreas-content img {
+  margin: 2rem 0rem;
+  width: 100%;
+  height: auto;
+}
+
+.contact-us-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-us-sec h1 {
+  margin: 2rem 0rem;
+}
+
+.wpcf7-form p {
+  padding: .5rem 0rem 2rem 0rem;
+}
+
+.wpcf7-form p input {
+  border-radius: 5pt;
+}
+
+.wpcf7-form p input.wpcf7-submit {
+  width: 100%;
+  border-radius: 5rem;
+  background-color: #eee;
+}
+
+.wpcf7-form p input.wpcf7-submit:hover {
+  background-color: #999;
+}
+
+.wpcf7-form p input.wpcf7-submit:active {
+  background-color: #777;
+}
+
+.flex-center {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  justify-items: center;
+}
+
+.flex-center .content-sec {
+  display: inline;
+}
+
+.flex-center .content-sec .news-clearfix {
+  color: #eee;
+}
+
+.news-content .date-post h2 span {
+  color: #bbb;
+}
+
+.news-content .date-post p {
+  color: #ccc;
+}
+
+.news-content .post-content-text .news-title a {
+  color: #eee;
+}
+
+.news-content .post-content-text .news-cat a {
+  color: #ccc;
+}
+
+.news-content .post-content-text .news-content-excerpt a {
+  border-radius: 2rem;
+}
+
+.news_pagination .page-numbers {
+  border-radius: 2rem;
+}
+
+.seo-opt {
+  display: none;
 }
 
 @media only screen and (min-width: 34rem) {
